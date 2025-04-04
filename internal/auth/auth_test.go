@@ -6,8 +6,6 @@ import (
 )
 
 func TestGetAPIKeySuccess(t *testing.T) {
-	// func GetAPIKey(headers http.Header) (string, error)
-
 	token := "3terfsfafsa3rregdrfg"
 	tests := []struct {
 		name    string
