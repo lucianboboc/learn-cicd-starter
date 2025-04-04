@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v5
         with:
-          go-version: "1.13.0"
+          go-version: "1.23.0"
 
-      - name: Force Failure
-        run: (exit 1)
+      - name: Force failure
+        run: go version
